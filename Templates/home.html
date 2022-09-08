@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title%}Home{% endblock %}
+{% block homeactive %}active{% endblock %}
+{% block content %}
+
+
+<div class=" piccontainer">
+    <div class="textcontainer">
+        <h1 class="h1text">
+            Hi There,<br><h2 class="name">I'm  &nbsp;<h class="h">Rahul R</h></h2>
+        </h1><br>
+        <h3 class="h1text">
+           I Am into Full stack   &nbsp; <b class="w">Web Development !</b>
+        </h3>
+
+        <div class="aboutbtn" >
+            <a class="button-86" href="/about">
+                About Me
+            </a>
+        </div>
+        <div class="social">
+            <a class=" button-85" href="#"><img src="{% static 'img/ig.png' %}" width="25%"></a>
+            <a class="button-85" href="#"><img src="{% static 'img/fb.png' %}" width="25%"></a>
+            <a class=" button-85" href="#"><img src="{% static 'img/lin.png' %}" width="25%"></a>
+            <a class=" button-85" href="#"><img src="{% static 'img/tw.png' %}" width="25%"></a>
+        </div>
+    </div>
+    <img class="pic" src="{% static 'img/Rahul.png' %}" alt="">
+</div>
+
+
+{% endblock %}
