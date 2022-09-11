@@ -1,3 +1,48 @@
 {% extends "base.html" %}
 {% block title%}Contact{% endblock %}
 {% block contactactive %}active{% endblock %}
+{% block content%}
+{% load widget_tweaks %}
+
+<div>
+  <p class="heading">Get in Touch</p><br>
+  <p class="sub-heading"> </p>
+</div>
+<form class="row-cols-lg-3  my-1 " method="POST">
+    {% csrf_token %}
+     
+
+    <div class="container my-3">
+        <div class="row-md-6">
+            <label class="form-label txtcolor"> Name</label>
+
+            {% render_field form.name class="form-control" type="text" %}
+        </div>
+    </div>
+   
+    <div class="container my-3">
+        <div class="row-md-6">
+            <label class="form-label txtcolor">Email</label>
+
+            {% render_field form.email class="form-control" placeholder="name@gmail.com" type="email" %}
+        </div>
+    </div>
+
+    <div class="container my-3">
+        <div class="row-md-6">
+            <label class="form-label txtcolor">Message</label>
+
+            {% render_field form.message class="form-control" type="text" %}
+        </div>
+    </div>
+     
+
+     
+    <div class="container my-2 text-center ">
+        <button type="submit" class="glow-on-hover">Send</button>
+    </div>
+
+
+</form>
+
+{% endblock %}

@@ -1,18 +1,10 @@
 .button-85 {
 
-    padding: 0.6em -136em;
-    border: none;
-    margin: 25px -48px;
-    outline: none;
-    color: rgb(255, 255, 255);
-    background: #1110;
+     
     cursor: pointer;
     position: relative;
-    z-index: 0;
-    border-radius: 211px;
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
+     
+  
 }
 
 .button-85:before {
