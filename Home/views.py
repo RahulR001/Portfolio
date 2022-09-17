@@ -2,14 +2,20 @@ from django.shortcuts import render, redirect
 from .forms import contactform
 from django.core.mail import send_mail
 
-# Create your views here.
+
+# ========== method-to-access-home-view ==========
+
 def home(response):
     return render(response, 'home.html')
 
 
+# ========== method-to-access-about-view ==========
+
 def about(response):
     return render(response, 'about.html')
 
+
+# ========== method-to-access-contact-view ==========
 
 def contact(response):
     if response.method=='POST':
@@ -25,6 +31,8 @@ def contact(response):
         form = contactform()
     return render(response, 'contact.html',{'form':form})
 
+
+# ========== method-to-access-project-view ==========
 
 def Projects(response):
     return render(response, 'Projects.html')

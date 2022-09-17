@@ -1,3 +1,5 @@
+// ========== function-to-animate-contant ==========
+
 var myVar;
 function myFunction() {
   myVar = setTimeout(showPage,  50  );

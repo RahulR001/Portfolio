@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
-/* Overall */
+
+
+/*========== overall ==========*/
 
 .heading {
     color: yellow;
@@ -21,7 +23,13 @@
     word-spacing: 3px;
 }
 
-/* Home page */
+.txtcolor {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+
+/*========== home-page ==========*/
 
 .name {
     display: flex;
@@ -31,31 +39,23 @@
 }
 
 .h {
-
     color: red;
     font-size: 45px;
 }
 
 .w {
-
     color: yellow;
     font-size: 30px;
 }
 
-
-
 .social {
     margin-right: 201px;
     margin-top: 29px;
-
-
 }
 
 .social img {
     width: 36px;
     margin-left: 10px;
-
-
 }
 
 * {
@@ -63,10 +63,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Merriweather', serif;
-
 }
-
-
 
 .h1text {
     display: flex;
@@ -79,7 +76,6 @@
     display: flex;
     justify-content: flex-start;
     text-align: start;
-
     color: white;
 }
 
@@ -90,7 +86,6 @@
     border: 0;
     padding: 0;
     margin-top: -30px;
-
 }
 
 .pic {
@@ -112,22 +107,8 @@
     margin-left: -64px;
 }
 
-/* Viewtask page */
 
-.scroll {
-    scroll-behavior: smooth;
-    width: 100%;
-    height: 500px;
-    overflow-x: hidden;
-    overflow-y: scroll;
-
-}
-
-.scroll::-webkit-scrollbar {
-    display: none;
-}
-
-/* Base template */
+/*========== Base-template ==========*/
 
 body {
     background: url("../img/wallpaperflare.com_wallpaper.jpg");
@@ -136,25 +117,7 @@ body {
     scroll-behavior: smooth;
     background-repeat: repeat-y;
     overflow: hidden;
-
-
 }
-
-/* body::before {
-    content: "";
-    background: url("../img/wallpaperflare.com_wallpaper.jpg")  ;
-    background-repeat: repeat-y;
-    background-attachment: fixed;
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    opacity: .5;
-
-    z-index: -1;
-} */
 
 .h2 {
     font-size: 43px;
@@ -174,136 +137,29 @@ a:hover {
 }
 
 #myDiv {
-
     display: none;
-
     text-align: center;
-
 }
 
 .animate-bottom {
-
     position: relative;
-
     -webkit-animation-name: animatebottom;
-
     -webkit-animation-duration: 1s;
-
     animation-name: animatebottom;
-
     animation-duration: 1s
 }
 
-/* .moon {
-    position: absolute;
-    top: 100px;
-    left: 400px;
-    width: 100px;
-    height: 100px;
-    background: whitesmoke;
-    border-radius: 50%;
-    z-index: -11;
-
-}
-
-.moon::after {
-    content: '';
-    position: absolute;
-    top: -15px;
-    left: 15px;
-    width: 100px;
-    height: 100px;
-    background: linear-gradient(#000000, #000000) fixed;
-
-    border-radius: 50%;
-    z-index: -11;
-    overflow: hidden;
-}
-
-.forest {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    z-index: 1000;
-    transform: scale(1.2);
-}
-
-body i1 {
-    position: absolute;
-    background: rgb(255, 255, 255);
-    border-radius: 50%;
-    animation: animate linear infinite;
-    z-index: -13;
-}
-
-@keyframes animate {
-    0% {
-        opacity: 0;
-        transform: translateY(0);
-    }
-
-    10%,
-    90% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-100px);
-    }
-} */
-
-/* Universe style */
-.txtcolor {
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-
-}
-
-/* 
-.tab {
-    text-align: center;
-    position: relative;
-    float: initial;
-}
-
-.tab button {
-    background-color: inherit;
-    border: 12px #198754;
-    outline: 1px;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-    border-radius: 0.375rem;
-    margin-left: 8px;
-}
-
-.tabcontent {
-    display: none;
-    padding: 6px 12px;
-    border-top: none;
-}
-
-.tab button.active {
-    background-color: #198754;
-}
-
-.tab button:hover {
-    background-color: #157347;
-} */
-
-/* Project page */
+ 
+/*========== Project-page ==========*/
 
 .project-item {
     display: flex;
     justify-content: center;
     margin-top: 200px;
-
 }
 
-/* About page */
+
+/*========== about-page ==========*/
 
 .main_abt {
     display: flex;
@@ -316,7 +172,6 @@ body i1 {
     padding-left: 191px;
     padding-right: 42px;
     padding-top: 63px;
-
 }
 
 .about_info p {
@@ -338,39 +193,32 @@ body i1 {
 .skills {
     color: whitesmoke;
     text-align: justify;
-
     padding-right: 77px;
     padding-top: 43px;
-
 }
 
 .skill_list {
     padding-top: 20px;
     display: flex;
     flex-wrap: wrap;
-
     align-items: baseline;
-
 }
 
 .skill_list p {
     margin-left: 24px;
-
-
 }
 
-/* Bootstrap alteration */
+
+/*========== Bootstrap-alteration ==========*/
+
 .card {
     margin-left: 50px;
     background-color: #202124;
-
 }
 
 .card-body {
     color: white;
 }
-
-
 
 .bg-dark1 {
     --bs-bg-opacity: 1;
@@ -378,18 +226,11 @@ body i1 {
 }
 
 .btn {
-
     border-radius: 33rem;
-
     border: 2px;
 }
 
-
-
-
-
 .container-fluid1 {
-
     width: 100%;
     padding-left: 12%;
     padding-top: 26px;
@@ -401,17 +242,13 @@ body i1 {
     justify-content: space-between;
 }
 
-
 .btn1 {
-
     --bs-btn-hover-color: rgb(0, 0, 0);
     --bs-btn-hover-bg: #ffffff;
 }
 
 .navbar-nav {
-
     padding-left: 60%;
-
 }
 
 .table1 {
@@ -447,10 +284,10 @@ body i1 {
     justify-content: left;
 }
 
-/* Animations */
+
+/*========== Animations ==========*/
 
 @-webkit-keyframes animatebottom {
-
     from {
         bottom: -100px;
         opacity: 0
@@ -460,11 +297,9 @@ body i1 {
         bottom: 0px;
         opacity: 1
     }
-
 }
 
 @keyframes animatebottom {
-
     from {
         bottom: -100px;
         opacity: 0
@@ -474,5 +309,4 @@ body i1 {
         bottom: 0;
         opacity: 1
     }
-
 }
