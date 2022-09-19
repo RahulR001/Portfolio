@@ -28,7 +28,21 @@
     text-decoration: none;
 }
 
+.a {
+    text-decoration: none;
+    color: #ffffff;
+    transform: scale(1);
+    
+    transition: .8s;
+}
 
+.a:hover {
+    transform: rotate(10deg);
+    transition: .8s;
+    transform: scale(1.1);
+    transition: .8s;
+    color: #ffffff;
+}
 /*========== home-page ==========*/
 
 .name {
@@ -49,7 +63,7 @@
 }
 
 .social {
-    margin-right: 201px;
+    margin-right: 166px;
     margin-top: 29px;
 }
 
@@ -111,7 +125,7 @@
 /*========== Base-template ==========*/
 
 body {
-    background: url("../img/wallpaperflare.com_wallpaper.jpg");
+    background: url("../img/bg.jpg");
     background-size: cover;
     background-attachment: fixed;
     scroll-behavior: smooth;
@@ -124,12 +138,13 @@ body {
 }
 
 .h1 {
-    font-size: 49px;
+    font-size: 43px;
     color: red;
 }
 
 a {
     text-decoration: none;
+    color: #ffffff;
 }
 
 a:hover {
@@ -155,9 +170,20 @@ a:hover {
 .project-item {
     display: flex;
     justify-content: center;
-    margin-top: 200px;
+    margin-top: 50px;
 }
 
+.scroll {
+    scroll-behavior: smooth;
+    width: 159%;
+    height: 510px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
 
 /*========== about-page ==========*/
 
@@ -287,18 +313,6 @@ a:hover {
 
 /*========== Animations ==========*/
 
-@-webkit-keyframes animatebottom {
-    from {
-        bottom: -100px;
-        opacity: 0
-    }
-
-    to {
-        bottom: 0px;
-        opacity: 1
-    }
-}
-
 @keyframes animatebottom {
     from {
         bottom: -100px;
@@ -310,3 +324,5 @@ a:hover {
         opacity: 1
     }
 }
+ 
+
