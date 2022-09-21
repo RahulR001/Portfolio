@@ -1,0 +1,101 @@
+ 
+
+/* body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #202124;
+} */
+
+.card {
+  position: relative;
+  width: 300px;
+  height: 150px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 13px 40px rgb(0, 0, 0);
+  transition: 0.5s;
+}
+ 
+.card:hover {
+  height: 350px;
+width: 350px
+}
+.card:hover .screenshot {
+   height: 150px;
+  width: 250px;
+}
+
+.screenshot {
+  background-color: #000000;
+  height: 110px;
+  width: 200px;
+  left: 50%;
+  top: -50px;
+  position: absolute;
+  border-radius: 20px;
+  transform: translateX(-50%);
+  box-shadow: 0 1px 100px 1px black;
+  overflow: hidden;
+  transition: 0.5s;
+}
+.screenshot img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.card .content {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.card .content .details {
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+  transition: 0.5s;
+  transform: translateY(180px);
+}
+.card .content .details p{
+   font-size: 30px;
+   font-weight: bolder;
+}
+.card:hover .content .details {
+  
+  transform: translateY(0);
+}
+.card .content .details h2 {
+  margin-bottom: 20px;
+}
+.card .content .lang {
+  margin-right: 170px;
+}
+.card .content .lang p{
+   font-size: 20px;
+   font-weight: bolder;
+}
+.card .content .details .data {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.card .content .details .data span {
+  margin-right: 20px;
+  padding: 10px;
+  align-items: baseline;
+}
+
+.card .content .details .data span::before {
+  margin-right: 10px;
+  margin-top: 10px;
+  content: "\2022";
+}
